@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simu_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="simu" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="538308514fs"></ZoomEndTime>
+      <Cursor1Time time="77002000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <ValueColumnWidth column_width="82"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/simu/Reset_int" type="logic">
+      <obj_property name="ElementShortName">Reset_int</obj_property>
+      <obj_property name="ObjectShortName">Reset_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/clk100_int" type="logic">
+      <obj_property name="ElementShortName">clk100_int</obj_property>
+      <obj_property name="ObjectShortName">clk100_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/BLUE_Out_int" type="array">
+      <obj_property name="ElementShortName">BLUE_Out_int[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BLUE_Out_int[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/GREEN_Out_int" type="array">
+      <obj_property name="ElementShortName">GREEN_Out_int[3:0]</obj_property>
+      <obj_property name="ObjectShortName">GREEN_Out_int[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/RED_Out_int" type="array">
+      <obj_property name="ElementShortName">RED_Out_int[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RED_Out_int[3:0]</obj_property>
+   </wvobject>
+</wave_config>
