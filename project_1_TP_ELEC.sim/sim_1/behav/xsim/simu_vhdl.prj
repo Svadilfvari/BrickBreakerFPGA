@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Downloads/Compt_bleu_5bits.vhd" \
+"../../../../../../Downloads/Compt_green_5bits.vhd" \
+"../../../../../../Downloads/Compt_red_5bits.vhd" \
+"../../../../../../Downloads/MAE.vhd" \
+"../../../../../../Downloads/clk_div_10m.vhd" \
+"../../../../../../Downloads/Moving_Colors.vhd" \
+"../../../../../../Downloads/simu.vhd" \
+
+# Do not sort compile order
+nosort
