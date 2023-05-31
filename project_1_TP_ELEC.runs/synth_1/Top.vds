@@ -1,0 +1,439 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 15 12:29:49 2021
+# Process ID: 14928
+# Current directory: C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.runs/synth_1/Top.vds
+# Journal file: C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2320 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 404.484 ; gain = 99.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.srcs/sources_1/imports/TACHE_1/Top.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.srcs/sources_1/new/Clk25MHz.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.srcs/sources_1/new/Clk25MHz.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'VGA_4bits' [C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.srcs/sources_1/imports/Sources_Debut_TP_2021/VHDL/VGA.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'VGA_4bits' (2#1) [C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.srcs/sources_1/imports/Sources_Debut_TP_2021/VHDL/VGA.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'Moving_Colors' [C:/Users/28712992/Downloads/Moving_Colors.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'clk_div_10m' [C:/Users/28712992/Downloads/clk_div_10m.vhd:17]
+WARNING: [Synth 8-614] signal 'clock_20Hz_int' is read in the process but is not in the sensitivity list [C:/Users/28712992/Downloads/clk_div_10m.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'clk_div_10m' (3#1) [C:/Users/28712992/Downloads/clk_div_10m.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Compt_bleu_5bits' [C:/Users/28712992/Downloads/Compt_bleu_5bits.vhd:13]
+WARNING: [Synth 8-614] signal 'comp_int' is read in the process but is not in the sensitivity list [C:/Users/28712992/Downloads/Compt_bleu_5bits.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Compt_bleu_5bits' (4#1) [C:/Users/28712992/Downloads/Compt_bleu_5bits.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Compt_red_5bits' [C:/Users/28712992/Downloads/Compt_red_5bits.vhd:13]
+WARNING: [Synth 8-614] signal 'comp_int' is read in the process but is not in the sensitivity list [C:/Users/28712992/Downloads/Compt_red_5bits.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Compt_red_5bits' (5#1) [C:/Users/28712992/Downloads/Compt_red_5bits.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Compt_green_5bits' [C:/Users/28712992/Downloads/Compt_green_5bits.vhd:13]
+WARNING: [Synth 8-614] signal 'comp_int' is read in the process but is not in the sensitivity list [C:/Users/28712992/Downloads/Compt_green_5bits.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Compt_green_5bits' (6#1) [C:/Users/28712992/Downloads/Compt_green_5bits.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'MAE' [C:/Users/28712992/Downloads/MAE.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MAE' (7#1) [C:/Users/28712992/Downloads/MAE.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Moving_Colors' (8#1) [C:/Users/28712992/Downloads/Moving_Colors.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Top' (9#1) [C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.srcs/sources_1/imports/TACHE_1/Top.vhd:26]
+WARNING: [Synth 8-3331] design clk_div_10m has unconnected port clock_100Mhz
+WARNING: [Synth 8-3331] design Top has unconnected port Red[3]
+WARNING: [Synth 8-3331] design Top has unconnected port Red[2]
+WARNING: [Synth 8-3331] design Top has unconnected port Red[1]
+WARNING: [Synth 8-3331] design Top has unconnected port Red[0]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[3]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[2]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[1]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[0]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[3]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[2]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[1]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 460.793 ; gain = 156.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 460.793 ; gain = 156.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 460.793 ; gain = 156.238
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'S15'. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S15'. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/28712992/Desktop/project_1_TP_ELEC/project_1_TP_ELEC.srcs/constrs_1/imports/TACHE_1/Tache1_Basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.438 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.488 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 792.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 792.488 ; gain = 487.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 792.488 ; gain = 487.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 792.488 ; gain = 487.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/28712992/Downloads/Compt_bleu_5bits.vhd:29]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/28712992/Downloads/Compt_red_5bits.vhd:29]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/28712992/Downloads/Compt_green_5bits.vhd:29]
+INFO: [Synth 8-802] inferred FSM for state register 'EP_reg' in module 'MAE'
+INFO: [Synth 8-5544] ROM "EF" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "EF" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              001 |                               00
+                      s1 |                              010 |                               01
+                      s2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'EP_reg' using encoding 'one-hot' in module 'MAE'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 792.488 ; gain = 487.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ClkDiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module VGA_4bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+Module clk_div_10m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 5     
++---Registers : 
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 5     
+Module Compt_bleu_5bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module Compt_red_5bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module Compt_green_5bits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module MAE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Top has unconnected port Red[3]
+WARNING: [Synth 8-3331] design Top has unconnected port Red[2]
+WARNING: [Synth 8-3331] design Top has unconnected port Red[1]
+WARNING: [Synth 8-3331] design Top has unconnected port Red[0]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[3]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[2]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[1]
+WARNING: [Synth 8-3331] design Top has unconnected port Green[0]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[3]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[2]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[1]
+WARNING: [Synth 8-3331] design Top has unconnected port Blue[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/MAE/FSM_onehot_EP_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ColorGen/MAE/FSM_onehot_EP_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/MAE/FSM_onehot_EP_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/Diviseur/clock_200Khz_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/Diviseur/clock_20Khz_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/Diviseur/clock_2Khz_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/Diviseur/clock_200hz_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ColorGen/Diviseur/clock_20Hz_int_reg )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin comparaison[0] with 1st driver pin 'ColorGen/MAE/comparaison_inferred/comparaison_reg[0]' [C:/Users/28712992/Downloads/MAE.vhd:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin comparaison[0] with 2nd driver pin 'VCC' [C:/Users/28712992/Downloads/MAE.vhd:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net comparaison[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/28712992/Downloads/MAE.vhd:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out[1] with 1st driver pin 'ColorGen/MAE/comparaison_inferred__0/out[1]' [C:/Users/28712992/Downloads/MAE.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out[1] with 2nd driver pin 'VCC' [C:/Users/28712992/Downloads/MAE.vhd:22]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net out[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/28712992/Downloads/MAE.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin comparaison_reg[0] with 1st driver pin 'ColorGen/MAE/comparaison_inferred__1/comparaison_reg[0]' [C:/Users/28712992/Downloads/MAE.vhd:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin comparaison_reg[0] with 2nd driver pin 'VCC' [C:/Users/28712992/Downloads/MAE.vhd:21]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net comparaison_reg[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/28712992/Downloads/MAE.vhd:21]
+WARNING: [Synth 8-3332] Sequential element (ColorGen/MAE/FSM_onehot_EP_reg[2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (ColorGen/MAE/FSM_onehot_EP_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (ColorGen/MAE/FSM_onehot_EP_reg[0]) is unused and will be removed from module Top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 792.488 ; gain = 487.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 792.488 ; gain = 487.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     5|
+|4     |LUT3 |     5|
+|5     |LUT4 |     4|
+|6     |LUT5 |     8|
+|7     |LUT6 |    10|
+|8     |FDCE |    22|
+|9     |FDPE |     2|
+|10    |IBUF |     2|
+|11    |OBUF |    14|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------+----------+------+
+|      |Instance   |Module    |Cells |
++------+-----------+----------+------+
+|1     |top        |          |    75|
+|2     |  Diviseur |ClkDiv    |     4|
+|3     |  VGA      |VGA_4bits |    54|
++------+-----------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 802.773 ; gain = 498.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 802.773 ; gain = 166.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 802.773 ; gain = 498.219
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 803.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 38 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 803.809 ; gain = 512.176
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 803.809 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/28712992/Desktop/project_1_TP_ELEC - Copie/project_1_TP_ELEC.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 15 12:30:26 2021...
