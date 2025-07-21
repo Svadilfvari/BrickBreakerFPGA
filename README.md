@@ -6,7 +6,7 @@
 
 This project recreates a console-style brick-breaking game using an FPGA board (BASYS 3). It was developed in the context of an academic mini-project, focusing on VHDL design, modular hardware structure, and VGA display interfacing.
 
-Originally developed by Yousri Aboudaoud & Alexandre Naprix, now maintained by **Edouard David**.
+Originally developed by Edouard David & Alexandre Naprix.
 
 ---
 
