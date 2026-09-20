@@ -5,7 +5,7 @@ Edouard David and Alexandre Naprix.
 
 The course provided a working game framework in VHDL (VGA controller, ball, paddle and brick logic, game controller, I/O managers). The project was to complete three tasks inside it. This README separates what we wrote from what was provided.
 
-![Block diagram of the design](docs/architecture.svg)
+![Block diagram of the design](docs/architecture.png)
 
 *Signal path on the Basys 3. Blue blocks are ours; grey blocks are course starter code. The VGA controller scans the screen and feeds the current pixel position back, so every other block works out, pixel by pixel, what should be drawn.*
 
@@ -30,7 +30,7 @@ The course provided a working game framework in VHDL (VGA controller, ball, padd
 
 ### Rotary encoder
 
-![State diagram of the encoder FSM](docs/encoder_fsm.svg)
+![State diagram of the encoder FSM](docs/encoder_fsm.png)
 
 *`move.vhd`. From `e0`, the filtered inputs `qa qb` choose the right-turn loop (`e1`–`e3`) or the left-turn loop (`e4`–`e6`). The outputs are Moore outputs: each pulse lasts one clock.*
 
@@ -43,19 +43,19 @@ The encoder has two contacts, A and B, which close in turn as the knob is turned
 
 `move.vhd` then reads direction from the pair. Both contacts closed after B was alone means a turn to the right (`e1`); after A was alone, a turn to the left (`e4`). The FSM waits in `e2` or `e5` until the contacts open again, then emits a second pulse in the same direction (`e3`, `e6`). So one detent of the knob produces two one-clock pulses: one as it closes, one as it releases.
 
-![Simulated waveform of the encoder testbench](docs/encoder_sim.svg)
+![Simulated waveform of the encoder testbench](docs/encoder_sim.png)
 
 *The committed testbench, simulated with GHDL. `qa qb = 10` is sampled at the 75 ns edge, the FSM enters `e4` and `rot_left` is high for one clock. The state row is derived from `move.vhd`, since the simulator does not record enumerated types in VCD files.*
 
 ### Moving colours
 
-![Moving colours datapath, FSM and defects](docs/moving_colors.svg)
+![Moving colours datapath, FSM and defects](docs/moving_colors.png)
 
 *Intended design and the two defects that stop it from working (details under Known issues).*
 
 ### Display timing
 
-![VGA line and frame timing](docs/vga_timing.svg)
+![VGA line and frame timing](docs/vga_timing.png)
 
 *Timing of the course's VGA controller. One line is 800 pixel clocks and one frame is 521 lines, which at 60 frames per second sets the 25 MHz pixel clock produced by `ClkDiv`.*
 
